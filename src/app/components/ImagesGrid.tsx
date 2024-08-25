@@ -1,7 +1,7 @@
-"use client"
-import Card from "./Card"
-import data from "../../../mock/dummyData"
-import { motion } from "framer-motion"
+"use client";
+import Card from "./Card";
+import data from "../../../mock/dummyData";
+import { motion } from "framer-motion";
 
 export default function ImagesGrid() {
   const container = {
@@ -9,14 +9,14 @@ export default function ImagesGrid() {
     show: {
       opacity: 1,
       transition: {
-		duration:1,
-        staggerChildren: 0.3
-      }
-    }
-  }
+        duration: 1,
+        staggerChildren: 0.3,
+      },
+    },
+  };
 
   return (
-    <motion.div
+    <motion.section
       variants={container}
       initial="hidden"
       animate="show"
@@ -30,6 +30,6 @@ export default function ImagesGrid() {
           date={element.date}
         />
       ))}
-    </motion.div>
-  )
+    </motion.section>
+  );
 }
