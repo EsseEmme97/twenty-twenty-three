@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <h1 className="text-6xl my-28 slide-in">Mindblow : a blog about philosophy</h1>
+      <h1 className="text-4xl my-20 md:text-6xl md:my-28 slide-in">Mindblow : a blog about philosophy</h1>
       <ImagesGrid/>
       <ActionSection/>      
       <Footer></Footer>

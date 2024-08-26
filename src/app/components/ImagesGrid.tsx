@@ -20,7 +20,7 @@ export default function ImagesGrid() {
       variants={container}
       initial="hidden"
       animate="show"
-      className="grid grid-cols-3 gap-4"
+      className="md:grid md:grid-cols-3 md:gap-4"
     >
       {data.map((element, index) => (
         <Card

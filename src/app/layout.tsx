@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={roboto.className+" container mx-auto my-12 text-lg"}>{children}</body>
+      <body className={roboto.className+" container mx-auto my-12 text-lg px-2 md:px-0"}>{children}</body>
     </html>
   );
 }

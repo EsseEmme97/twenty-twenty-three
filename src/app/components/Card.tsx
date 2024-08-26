@@ -15,7 +15,7 @@ const item = {
 
 export default function Card({ title, content, date }: CardProps) {
   return (
-    <motion.div className="p-2" variants={item}>
+    <motion.div className="p-2 my-8 md:my-0" variants={item}>
       <Image
         src="https://picsum.photos/300/200?grayscale"
         width={300}
@@ -23,7 +23,7 @@ export default function Card({ title, content, date }: CardProps) {
         className="min-w-full"
         alt="imagePlaceholder"
       />
-      <h2 className="text-6xl mt-8 hover:underline">{title}</h2>
+      <h2 className="text-4xl md:text-6xl mt-8 hover:underline">{title}</h2>
       <p className="my-8">{content}</p>
       <p>{date}</p>
     </motion.div>
